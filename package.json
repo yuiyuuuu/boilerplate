@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "clean": "rimraf dist",
-    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:build\"",
     "client:dev": "vite",
     "server:dev": "nodemon src/server.js",
     "server:build": "babel --verbose --out-dir dist --only 'src/server.js,src/lib/' src",
